@@ -25,7 +25,7 @@ const SignIn = ({ userType = 'customer', onClose }) => {
       role: userType // userType should be 'admin' or 'customer' based on the form
     };
     try {
-      const res = await fetch('http://localhost:5000/api/auth/login', {
+      const res = await fetch('https://pawsitive-pet.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
