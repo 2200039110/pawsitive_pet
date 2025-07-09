@@ -13,7 +13,7 @@ const BrowsePets = () => {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/pets')
+    fetch('https://pawsitive-pet.onrender.com')
       .then(res => res.json())
       .then(data => setPets(data));
   }, []);
