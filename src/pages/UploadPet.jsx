@@ -64,7 +64,7 @@ const UploadPet = () => {
       const file = new Blob([u8arr], { type: mime });
       formDataToSend.append('image', file, 'pet-image.png');
     }
-    const res = await fetch('http://localhost:5000/api/pets', {
+    const res = await fetch('https://pawsitive-pet.onrender.com', {
       method: 'POST',
       body: formDataToSend
     });
