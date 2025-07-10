@@ -32,7 +32,7 @@ const SignUp = ({ userType = 'customer', onClose }) => {
     };
 
     try {
-      const res = await fetch('https://pawsitive-pet.onrender.com', {
+      const res = await fetch('https://pawsitive-pet.onrender.com/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
